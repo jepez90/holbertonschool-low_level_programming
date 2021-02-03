@@ -13,6 +13,7 @@ int main(void)
 {
 	char texto[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	write(2, texto, sizeof(texto));
+	write(2, texto, 59);	
 	return (1);
 }
+
