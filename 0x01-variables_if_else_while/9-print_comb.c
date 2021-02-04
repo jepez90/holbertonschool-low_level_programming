@@ -11,12 +11,12 @@ int main(void)
 {
 	int n;
 
-	for (n = 0; n < 10; n++)
+	for (n = 48; n < 58; n++)
 	{
-		if (n != 0)
+		if (n != 48)
 		{
-			putchar(,);
-			putchar(32);
+			putchar(',');
+			putchar(' ');
 		}
 		putchar(n);
 	}
