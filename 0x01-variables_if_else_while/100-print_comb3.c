@@ -12,19 +12,29 @@ int main(void)
 	int n;
 	int i;
 	int iInicial;
+	int printComa;
 
 	iInicial = 48;
+	printComa = 0;
 	for (n = 48; n < 58; n++)
 	{
 		for (i = iInicial; i < 58; i++)
 		{
-			if (n + i != 96)
+			if (i != n)
 			{
-				putchar(',');
-				putchar(' ');
+				if (printComa)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+				else
+				{
+					printComa = 1;
+				}
+				putchar(n);
+				putchar(i);
+
 			}
-			putchar(n);
-			putchar(i);
 		}
 		iInicial++;
 	}
