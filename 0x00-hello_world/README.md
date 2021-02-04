@@ -1,6 +1,6 @@
 # Folder 0x00. C - Hello, World
 
-## Files for this project in C
+## Files for this project in C: first steps with C compiler
 
 
 ### 0-preprocessor
