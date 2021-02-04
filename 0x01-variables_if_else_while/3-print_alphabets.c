@@ -18,7 +18,6 @@ int main(void)
 	{
 
 		putchar(n);
-		putchar(10);
 
 		n++;
 		if (n == 91)
@@ -26,6 +25,7 @@ int main(void)
 		if (n == 123)
 			n = 65;
 	}
+	putchar(10);
 	return (0);
 }
 
