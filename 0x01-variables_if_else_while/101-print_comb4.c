@@ -14,9 +14,11 @@ int main(void)
 	int j;
 	int iInicial;
 	int jInicial;
+	int printComa;
 
 	iInicial = 48;
 	jInicial = 48;
+	printComa = 0;
 	for (n = 48; n < 58; n++)
 	{
 		for (i = iInicial; i < 58; i++)
@@ -25,10 +27,14 @@ int main(void)
 			{
 				if (n != i && i != j)
 				{
-					if (j != 48)
+					if (printComa)
 					{
 						putchar(',');
 						putchar(' ');
+					}
+					else
+					{
+						printComa = 1;
 					}
 					putchar(n);
 					putchar(i);
