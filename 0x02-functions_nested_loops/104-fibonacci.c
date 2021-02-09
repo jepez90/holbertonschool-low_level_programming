@@ -11,12 +11,15 @@ int main(void)
 	double num2 = 1;
 	int counter;
 
-	printf("1");
-	for (counter = 1; counter < 98; counter++)
+	for (counter = 0; counter < 98; counter++)
 	{
+		if (counter == 0)
+			printf("%.0f", num2);
+		else
+			printf(", %.0f", num2);
+
 		num2 += num1;
 		num1 = num2 - num1;
-		printf(", %.0f", num2);
 	}
 	printf("\n");
 	return (0);

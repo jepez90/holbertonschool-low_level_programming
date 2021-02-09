@@ -18,7 +18,6 @@ int main(void)
 
 		num2 += num1;
 		num1 = num2 - num1;
-		
 	}
 	printf("%ld\n", sum);
 	return (0);
