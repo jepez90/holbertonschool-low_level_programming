@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include "holberton.h"
+
 /**
- * print_natural - prints the sum of multiples of 3 or 5 before 1024.
+ * main - check the code for Holberton School students.
  *
- * Return: void.
+ * Return: Always 0.
  */
-void print_natural(void)
+int main(void)
 {
 	int counter, sum = 0;
 
@@ -15,4 +15,6 @@ void print_natural(void)
 			sum += counter;
 	}
 	printf("%d\n", sum);
+
+	return (0);
 }
