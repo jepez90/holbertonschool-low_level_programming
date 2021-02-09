@@ -15,6 +15,4 @@ void print_natural(void)
 			sum += counter;
 	}
 	printf("%d\n", sum);
-	return;
-
 }
