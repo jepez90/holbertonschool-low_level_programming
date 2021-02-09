@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "holberton.h"
 
 /**
  * main - Entry point - write holberton
@@ -7,7 +8,13 @@
  */
 int main(void)
 {
-	_putchar("Holberton\n");
+	char txt[] = "Holberton";
+	int i = 0;
+
+	for (; i < 9 ; i++)
+		_putchar(txt[i]);
+
+	_putchar(10);
 	return (0);
 }
 
