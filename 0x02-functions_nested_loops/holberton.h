@@ -30,6 +30,15 @@ void jack_bauer(void);
 /* times_table - print the nine table */
 void times_table(void);
 
-/* add - return the sum of two numbers int*/
+/* add - return the sum of two numbers int. */
 int add(int, int);
+
+/* print_to_98 - prints all natural numbers from n to 98, followed by a new line. */
+void print_to_98(int);
+
+/* print_times_table - prints the n times table, starting with 0 */
+void print_times_table(int);
+
+/* print_natural - prints the sum of multiples of 3 or 5 */
+void print_natural(void);
 #endif
