@@ -37,5 +37,7 @@ void print_diagonal(int n);
 void print_square(int size);
 /* print_triangle - prints a triangle, followed by a new line.*/
 void print_triangle(int size);
+/* print_number - prints an integer.*/
+void print_number(int n);
 
 #endif /* HOLBERTON_H */
