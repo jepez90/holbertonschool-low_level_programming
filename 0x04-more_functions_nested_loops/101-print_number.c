@@ -1,31 +1,37 @@
 #include "holberton.h"
-
+#include <stdio.h>
+#include <unistd.h>
 /**
  * print_number - prints an integer.
- * 
+ *
+ * @n: integer to be printed
  * Return: void.
  */
 void print_number(int n)
 {
-	int orden=-1;
-	if (n == 0)
-	{
-		_putchar('0');
-	}
-	else
-	{
-		if (n > 0)
-			n *= -1;
-		else
-			_putchar('-');
+	int ultimoDigito = 0;
+	int digitos = 0;
 
-		while (n < (orden *= 10));
+	ultimoDigito = n % 10;
+	n = n / 10;
 
-		while (orden < -1)
-		{
-			orden = orden / 10;
-			_putchar((n/orden) + '0');
-			n %= orden;
-		}
+	if (ultimoDigito < 0)
+	{
+		ultimoDigito *= -1;
+		n *= -1;
+		_putchar('-');
 	}
+
+	while (n != 0)
+	{
+		digitos = (10 * digitos) + (n % 10);
+		n /= 10;
+	}
+	while (digitos != 0)
+	{
+		_putchar(digitos % 10 + '0');
+		digitos /= 10;
+	}
+	_putchar('0' + ultimoDigito);
+
 }
