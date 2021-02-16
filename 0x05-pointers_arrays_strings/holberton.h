@@ -40,4 +40,6 @@ void print_array(int *a, int n);
  */
 char *_strcpy(char *dest, char *src);
 
+/* _atoi - convert a string to an integer.*/
+int _atoi(char *s);
 #endif /* HOLBERTON_H */
