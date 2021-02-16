@@ -2,6 +2,12 @@
 
 files in this project
 
+### holberton.h
+Library of functions in this folder
+
+### _putchar.c 
+Function that prints a char in stdio, without use stdio library 
+
 ### 0-reset_to_98.c
 
 Function that takes a pointer to an **int** as parameter and updates the value it points to to **98**.
