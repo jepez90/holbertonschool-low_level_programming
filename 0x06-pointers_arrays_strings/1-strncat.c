@@ -7,7 +7,7 @@
  * @src: string to be copied to the end of dest.
  * @n: numbers of chars to be copied from src to dest.
  *
- * return: pointer to dest.
+ * Return: pointer to dest.
  */
 char *_strncat(char *dest, char *src, int n)
 {

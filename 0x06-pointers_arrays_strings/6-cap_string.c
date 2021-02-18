@@ -14,11 +14,19 @@ char *cap_string(char *str)
 	int j;
 
 	for (; *(str + i) != '\0'; i++)
-		if (i != 0)
-			if (*(str + i) >= 'a' && *(str + i) <= 'z')
+		if (*(str + i) >= 'a' && *(str + i) <= 'z')
+		{
+			if (i == 0)
+			{
+				*(str) += ('A' - 'a');
+			}
+			else
+			{
 				for (j = 0; j < 13; j++)
 					if (*(str + i - 1) == separadores[j])
 						*(str + i) += ('A' - 'a');
+			}
+		}
 
 	return (str);
 }

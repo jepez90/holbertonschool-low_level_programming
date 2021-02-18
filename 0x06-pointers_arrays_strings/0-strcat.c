@@ -1,12 +1,12 @@
 #include "holberton.h"
 
 /**
- * _strcat -  concatenates two strings.
+ * _strcat - concatenates two strings.
  *
  * @dest: string to be modified.
  * @src: string to be copied to the end of dest.
  *
- * return: pointer to dest.
+ * Return: pointer to dest.
  */
 char *_strcat(char *dest, char *src)
 {

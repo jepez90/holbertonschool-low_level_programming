@@ -21,7 +21,8 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 
 	if (*(src + counter) == '\0')
-		*(dest + counter) = '\0';
+		while (counter < n)
+			*(dest + counter++) = '\0';
 
 	return (dest);
 }
