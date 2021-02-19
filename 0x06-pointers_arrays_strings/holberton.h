@@ -31,4 +31,6 @@ char *leet(char *);
 /* rot13 -  encodes a string using rot13.*/
 char *rot13(char *);
 
+/* print_number - prints an integer*/
+void print_number(int n);
 #endif /* HOLBERTON_H */
