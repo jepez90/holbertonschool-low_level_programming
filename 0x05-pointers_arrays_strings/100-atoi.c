@@ -10,7 +10,7 @@
 int _atoi(char *s)
 {
 	int sign = 1;
-	int number = 0;
+	unsigned int number = 0;
 	/*1- analisys sign*/
 	while (!('0' <= *s && *s <= '9') && *s != '\0')
 	{
@@ -24,17 +24,6 @@ int _atoi(char *s)
 	/*2 - extract the number */
 	while ('0' <= *s && *s <= '9' && *s != '\0')
 	{
-		/*3 avoid overflow */
-		if (sign > 0)
-		{
-			if ((number * 10) + (*s - '0') > INT_MAX)
-				break;
-		}
-		else
-		{
-			if (-((number * 10) + (*s - '0')) < INT_MIN)
-				break;
-		}
 
 		number = (number * 10) + (*s - '0');
 		s++;
