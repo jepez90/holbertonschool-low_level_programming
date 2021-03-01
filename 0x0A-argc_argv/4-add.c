@@ -10,7 +10,7 @@
   */
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int i, j, sum = 0;
 	char *texto;
 
 	if (argc == 1)
@@ -21,19 +21,18 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (atoi(argv[i]))
+			texto = argv[i];
+
+			for (j = 0; *(texto + j) != '\0'; j++)
 			{
-				sum += atoi(argv[i]);
-			}
-			else
-			{
-				texto = argv[i];
-				if (!(*texto == '0' && *(texto + 1) == '\0'))
+				if (!('0' <= *(texto + j) && *(texto + j) <= '9'))
 				{
 					printf("Error\n");
 					return (1);
 				}
 			}
+
+			sum += atoi(argv[i]);
 		}
 
 		printf("%d\n", sum);
