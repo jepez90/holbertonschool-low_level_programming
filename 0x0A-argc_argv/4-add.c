@@ -11,6 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int i, sum = 0;
+	char *texto;
 
 	if (argc == 1)
 	{
@@ -26,7 +27,8 @@ int main(int argc, char *argv[])
 			}
 			else
 			{
-				if(*argv[i] != '0')
+				texto = argv[i];
+				if (*texto == '0' && *(texto + 1) != '\0')
 				{
 					printf("Error\n");
 					return (1);
