@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 			else
 			{
 				texto = argv[i];
-				if (*texto == '0' && *(texto + 1) != '\0')
+				if (*texto != '0' || *(texto + 1) != '\0')
 				{
 					printf("Error\n");
 					return (1);
