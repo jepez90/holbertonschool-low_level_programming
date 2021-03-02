@@ -15,11 +15,11 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	
+
 	for (str_len = 0; *(str + str_len) != '\0'; str_len++)
 	{}
 
-	resultado = malloc(sizeof(str) * str_len);
+	resultado = malloc(sizeof(char) * str_len);
 	if (resultado == NULL)
 		return (NULL);
 
