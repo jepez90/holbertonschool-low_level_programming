@@ -19,11 +19,10 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	r[size_r] = '\0';
 	l1--;
 	l2--;
-	i = size_r - 1;
+	i = size_r - 2;
 
-	if (l1 >= i || l2 >= i)
+	if (l1 > i || l2 > i)
 		return (0);
-	i--;
 	while (l1 >= 0 || l2 >= 0)
 	{
 		num1 = 0;
@@ -46,6 +45,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			return (0);
 
 		r[i] = sumaUnitaria + '0';
+		return (r + i);
 	}
-	return (r + i);
+	else
+		return (r + i + 1);
 }
