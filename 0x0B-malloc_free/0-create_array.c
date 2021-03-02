@@ -17,9 +17,12 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 
 	resultado = malloc(sizeof(resultado) * size);
-	for (i = 0; i < size; i++)
+	if (resultado != NULL)
 	{
-		*(resultado + i) = c;
-	}
+		for (i = 0; i < size; i++)
+		{
+			*(resultado + i) = c;
+		}
+}
 	return (resultado);
 }
