@@ -12,7 +12,7 @@ void *malloc_checked(unsigned int b)
 {
 	void *resultado;
 
-	resultado = malloc( b);
+	resultado = malloc(b);
 
 	if (resultado == NULL)
 		exit(98);
