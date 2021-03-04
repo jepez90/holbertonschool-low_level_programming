@@ -1,3 +1,5 @@
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 # Project: 0x0C. C - More malloc, free
 
 Files in this folder:
@@ -5,10 +7,6 @@ Files in this folder:
 ### holberton.h
 
 Library of functions in this folder.
-
-### _putchar.c
-
-Function that prints a char in stdio, without use stdio library.
 
 ### 0-malloc_checked.c
 
