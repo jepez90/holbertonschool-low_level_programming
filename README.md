@@ -6,46 +6,46 @@
 
 projects in this Repo:
 
-### <img src="https://1001freedownloads.s3.amazonaws.com/icon/thumb/344635/Places-folder-blue-icon.png" alt="Logo" height="30"> 0x00-hello_world
+### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo" height="30"> 0x00-hello_world
 Firs steps in C, how about the compile process
 
-### <img src="https://1001freedownloads.s3.amazonaws.com/icon/thumb/344635/Places-folder-blue-icon.png" alt="Logo" height="30"> 0x01-variables_if_else_while
+### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo" height="30"> 0x01-variables_if_else_while
 flow control of program
 
-### <img src="https://1001freedownloads.s3.amazonaws.com/icon/thumb/344635/Places-folder-blue-icon.png" alt="Logo" height="30"> 0x02-functions_nested_loops
+### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo" height="30"> 0x02-functions_nested_loops
 how about nested loops
 
-### <img src="https://1001freedownloads.s3.amazonaws.com/icon/thumb/344635/Places-folder-blue-icon.png" alt="Logo" height="30"> 0x03-debugging
+### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo" height="30"> 0x03-debugging
 how to debug the code
 
-### <img src="https://1001freedownloads.s3.amazonaws.com/icon/thumb/344635/Places-folder-blue-icon.png" alt="Logo" height="30"> 0x04-more_functions_nested_loops
+### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo" height="30"> 0x04-more_functions_nested_loops
 more and more loops
 
-### <img src="https://1001freedownloads.s3.amazonaws.com/icon/thumb/344635/Places-folder-blue-icon.png" alt="Logo" height="30"> 0x05-pointers_arrays_strings
+### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo" height="30"> 0x05-pointers_arrays_strings
 Firs steps with pionters
 
-### <img src="https://1001freedownloads.s3.amazonaws.com/icon/thumb/344635/Places-folder-blue-icon.png" alt="Logo" height="30"> 0x06-pointers_arrays_strings
+### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo" height="30"> 0x06-pointers_arrays_strings
 More excercises with pointers
 
-### <img src="https://1001freedownloads.s3.amazonaws.com/icon/thumb/344635/Places-folder-blue-icon.png" alt="Logo" height="30"> 0x07. C - Even more pointers, arrays and strings
+### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo" height="30"> 0x07. C - Even more pointers, arrays and strings
 more and more pointers and arrays
 
-### <img src="https://1001freedownloads.s3.amazonaws.com/icon/thumb/344635/Places-folder-blue-icon.png" alt="Logo" height="30"> 0x08. C - Recursion
+### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo" height="30"> 0x08. C - Recursion
 
 Tasks about of What is recursion and How to implement recursion
 
-### <img src="https://1001freedownloads.s3.amazonaws.com/icon/thumb/344635/Places-folder-blue-icon.png" alt="Logo" height="30"> 0x09. C - Static libraries
+### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo" height="30"> 0x09. C - Static libraries
 
 What is a static library, how does it work, how to create one, and how to use it
 
-### <img src="https://1001freedownloads.s3.amazonaws.com/icon/thumb/344635/Places-folder-blue-icon.png" alt="Logo" height="30"> 0x0A. C - argc, argv
+### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo" height="30"> 0x0A. C - argc, argv
 
 How to use arguments passed to your program
 
-### <img src="https://1001freedownloads.s3.amazonaws.com/icon/thumb/344635/Places-folder-blue-icon.png" alt="Logo" height="30"> 0x0B. C - malloc, free
+### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo" height="30"> 0x0B. C - malloc, free
 
 What is the difference between automatic and dynamic allocation
 
-### <img src="https://1001freedownloads.s3.amazonaws.com/icon/thumb/344635/Places-folder-blue-icon.png" alt="Logo" height="30"> 0x0C. C - More malloc, free
+### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo" height="30"> 0x0C. C - More malloc, free
 
 How to use the exit, calloc and realloc functions
