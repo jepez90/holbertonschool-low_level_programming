@@ -37,5 +37,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	resultado[i + j] = '\0';
 
-	return ((void *)resultado);
+	return (resultado);
 }
