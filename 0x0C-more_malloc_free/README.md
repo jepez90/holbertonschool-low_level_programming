@@ -1,4 +1,4 @@
-[![LinkedIn][linkedin-shield]][linkedin-url]
+| ![Twitter Follow](https://img.shields.io/twitter/follow/jepez90?label=Follow%20me&style=social) | ![linked in Follow](https://img.shields.io/badge/LinkedIn-Follow-blue|)
 
 # Project: 0x0C. C - More malloc, free
 
@@ -31,3 +31,4 @@ Function that reallocates a memory block using **malloc** and **free**
 ### 101-mul.c
 
 Program that multiplies two positive numbers.
+
