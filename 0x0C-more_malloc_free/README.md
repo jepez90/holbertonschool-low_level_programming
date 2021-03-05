@@ -2,32 +2,34 @@
 
 # Project: 0x0C. C - More malloc, free
 
+``` How to use the exit, calloc and realloc functions ```
+
 Files in this folder:
 
-### <img src="https://cdn.iconscout.com/icon/free/png-256/c-programming-569564.png" alt="Logo" width="30"> 0-malloc_checked.c
+### <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30">  0-malloc_checked.c
 
 Function that allocates memory using **malloc**.
 
-### <img src="https://cdn.iconscout.com/icon/free/png-256/c-programming-569564.png" alt="Logo" width="30">1-string_nconcat.c
+### <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30">  1-string_nconcat.c
 
 Function that concatenates two strings.
 
-### <img src="https://cdn.iconscout.com/icon/free/png-256/c-programming-569564.png" alt="Logo" width="30">2-calloc.c
+### <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30">  2-calloc.c
 
 Function that allocates memory for an array, using **malloc**.
 
-### <img src="https://cdn.iconscout.com/icon/free/png-256/c-programming-569564.png" alt="Logo" width="30">3-array_range.c
+### <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30">  3-array_range.c
 
 Function that creates an array of integers.
 
-### <img src="https://cdn.iconscout.com/icon/free/png-256/c-programming-569564.png" alt="Logo" width="30">100-realloc.c
+### <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30">  100-realloc.c
 
 Function that reallocates a memory block using **malloc** and **free**
 
-### <img src="https://cdn.iconscout.com/icon/free/png-256/c-programming-569564.png" alt="Logo" width="30">101-mul.c
+### <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30">  101-mul.c
 
 Program that multiplies two positive numbers.
 
-### holberton.h
+### <img src="https://i.imgur.com/UCWcsWc.png" alt="Logo C" height="30"> holberton.h
 
 Library of functions in this folder.
