@@ -42,11 +42,11 @@ Function that prints the sum of the two diagonals of a square matrix of integers
 
 Function that sets the value of a pointer to a char.
 
-### <img src="https://i.imgur.com/UCWcsWc.png" alt="Logo C" height="30"> 101-crackme_password
+### <img src="https://i.imgur.com/b3mhfGO.png" alt="Logo document" height="30"> 101-crackme_password
 
 Create a file that contains the password for the ** crackme2 ** executable.
 
-### <img src="https://i.imgur.com/UCWcsWc.png" alt="Logo C" height="30"> holberton.h
+### <img src="https://i.imgur.com/b3mhfGO.png" alt="Logo document" height="30"> holberton.h
 
 Library of functions in this folder.
 

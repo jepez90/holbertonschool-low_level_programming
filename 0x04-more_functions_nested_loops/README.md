@@ -58,7 +58,7 @@ Program that finds and prints the largest prime factor of the number 61285247514
 
 Function that prints an integer.
 
-### <img src="https://i.imgur.com/UCWcsWc.png" alt="Logo C" height="30"> holberton.h
+### <img src="https://i.imgur.com/b3mhfGO.png" alt="Logo document" height="30"> holberton.h
 
 Library of functions in this folder.
 

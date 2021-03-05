@@ -43,7 +43,7 @@ Function that returns **1** if a string isa palindrome and **0** if not.
 Function that compares two strings and returns **1** if the strings can be considered identical, otherwise return **0**.
 
 
-### <img src="https://i.imgur.com/UCWcsWc.png" alt="Logo C" height="30"> holberton.h
+### <img src="https://i.imgur.com/b3mhfGO.png" alt="Logo document" height="30"> holberton.h
 
 Library of functions in this folder.
 

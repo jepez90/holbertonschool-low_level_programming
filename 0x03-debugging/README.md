@@ -20,6 +20,6 @@ This program prints the largest of three integers.
 
 This program converts a date to the day of year and determines how many days are left in the year, taking leap year into consideration.
 
-### <img src="https://i.imgur.com/UCWcsWc.png" alt="Logo C" height="30"> holberton.h
+### <img src="https://i.imgur.com/b3mhfGO.png" alt="Logo document" height="30"> holberton.h
 
 Library of functions in this folder.

@@ -54,7 +54,7 @@ Function that convert a string to an integer.FYI: The standard library provides 
 
 Program that generates random valid passwords for the program **101-crackme**.
 
-### <img src="https://i.imgur.com/UCWcsWc.png" alt="Logo C" height="30"> holberton.h
+### <img src="https://i.imgur.com/b3mhfGO.png" alt="Logo document" height="30"> holberton.h
 
 Library of functions in this folder.
 

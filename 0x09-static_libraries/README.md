@@ -14,6 +14,6 @@ static library libholberton.a containing all the functions listed below:
 
 script called create_static_lib.sh that creates a static library called liball.a from all the .c files that are in the current directory.
 
-### <img src="https://i.imgur.com/UCWcsWc.png" alt="Logo C" height="30"> holberton.h
+### <img src="https://i.imgur.com/b3mhfGO.png" alt="Logo document" height="30"> holberton.h
 
 Library of functions in this folder.
