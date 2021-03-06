@@ -34,6 +34,31 @@ int number_str_len(char *string)
 }
 
 /**
+ * print_number_string - print number of string
+ *
+ * @array_respuesta: pointer to string.
+ * @len: Length of the string
+ *
+ * Return: nothing.
+ */
+void print_number_string(char *array_respuesta, int len)
+{
+	char printed = 0;
+	int i;
+
+	for (i = 0; i < len; i++)
+		if (printed || ('0' < array_respuesta[i] && array_respuesta[i] <= '9'))
+		{
+			_putchar(array_respuesta[i]);
+			printed = 1;
+		}
+
+	if (!printed)
+		_putchar('0');
+	_putchar('\n');
+}
+
+/**
  * main - enter point
  *
  * @argc: number of parameters passed to program
@@ -43,7 +68,7 @@ int number_str_len(char *string)
  */
 int main(int argc, char *argv[])
 {
-	int len1 = 0, len2 = 0, sum = 0, printed = 0, index1, index2, i;
+	int len1 = 0, len2 = 0, sum = 0, index1, index2, i;
 	char *num1, *num2, *array_respuesta;
 
 	if (argc != 3)
@@ -73,14 +98,9 @@ int main(int argc, char *argv[])
 	if (sum != 0)
 		array_respuesta[i] = sum + '0';
 
-	/* print the response */
-	for (i = 0; i < (len1 + len2); i++)
-		if (printed || ('0' < array_respuesta[i] && array_respuesta[i] <= '9'))
-		{
-			_putchar(array_respuesta[i]);
-			printed++;
-		}
-	_putchar('\n');
+	/* print the number*/
+	print_number_string(array_respuesta, (len1 + len2));
+
 	free(array_respuesta);
 	return (0);
 }
