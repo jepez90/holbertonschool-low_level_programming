@@ -1,6 +1,9 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 
+/* _putchar - writes the character c to stdout */
+int _putchar(char c);
+
 /* malloc_checked - allocates memory using malloc.*/
 void *malloc_checked(unsigned int b);
 

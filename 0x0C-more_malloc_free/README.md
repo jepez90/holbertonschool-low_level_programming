@@ -33,3 +33,7 @@ Program that multiplies two positive numbers.
 ### <img src="https://i.imgur.com/b3mhfGO.png" alt="Logo document" height="30"> holberton.h
 
 Library of functions in this folder.
+
+### <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30"> _putchar.c
+
+Function that prints a char in stdio, without use stdio library.
