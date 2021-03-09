@@ -2,7 +2,7 @@
 
 # Repo: holbertonschool-low_level_programming
 
-``` Repo for all projects at first steps in C ```
+> Repo for all projects of the first steps in C.
 
 Projects in this Repo:
 
@@ -31,21 +31,23 @@ More excercises with pointers
 more and more pointers and arrays
 
 ### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo C" height="30"> 0x08. C - Recursion
-
 Tasks about of What is recursion and How to implement recursion
 
 ### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo C" height="30"> 0x09. C - Static libraries
-
 What is a static library, how does it work, how to create one, and how to use it
 
 ### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo C" height="30"> 0x0A. C - argc, argv
-
 How to use arguments passed to your program
 
 ### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo C" height="30"> 0x0B. C - malloc, free
-
 Dynamic allocation of memory
 
 ### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo C" height="30"> 0x0C. C - More malloc, free
-
 How to use the exit, calloc and realloc functions
+
+### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo C" height="30"> 0x0D. C - Preprocessor
+Exercises about what are macros, how to use them and how to include guard your header files.
+
+
+### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo C" height="30"> 0x0E. C - Structures, typedef
+What are structures, when, why and how to use them. How to use typedef

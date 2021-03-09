@@ -6,13 +6,9 @@
 
 ### <img src="https://i.imgur.com/b3mhfGO.png" alt="Logo document" height="30"> dog.h
 
-Define a new type **struct dog** with the following elements:
-
-* **name**, type =__char *__
-* **age**, type = **float**
-* **owner**, type = __char *__
-
+Library that a new type **struct dog** 
 Define a new type **dog_t** as a new name for the type **struct dog**.
+countains the prototype of other functions.
 
 ### <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30"> 1-init_dog.c
 
