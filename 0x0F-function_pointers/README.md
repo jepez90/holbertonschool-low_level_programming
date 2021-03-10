@@ -8,19 +8,15 @@
 Files in this folder:
 
 ### <img src="https://i.imgur.com/b3mhfGO.png" alt="Logo document" height="30"> function_pointers.h
-
 Library with the functions in this folder.
 
-### <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30"> 0-print_name.c
-
+#### <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30"> 0-print_name.c
 Function that prints a name.
 
 ### <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30"> 1-array_iterator.c
-
 Function that executes a function given as a parameter on each element of an array.
 
 ### <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30"> 2-int_index.c
-
 Function that searches for an integer.
 
 ### <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30"> 3-main.c
