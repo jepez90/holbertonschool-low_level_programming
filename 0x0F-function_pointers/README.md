@@ -19,10 +19,10 @@ Function that executes a function given as a parameter on each elemen
 ###  <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30"> 2-int_index.c
 Function that searches for an integer.
 
-### <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30"> 3-main.c
-### <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30"> 3-op_functions.c
-### <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30"> 3-get_op_func.c
-### <img src="https://i.imgur.com/b3mhfGO.png" alt="Logo document" height="30"> 3-calc.h
+###  <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30"> 3-main.c
+###  <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30"> 3-op_functions.c
+###  <img src="https://i.imgur.com/s1rXGpW.png" alt="Logo C" height="30"> 3-get_op_func.c
+###  <img src="https://i.imgur.com/b3mhfGO.png" alt="Logo document" height="30"> 3-calc.h
 
 Program that performs simple operations.
 

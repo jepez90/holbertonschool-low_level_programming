@@ -11,9 +11,8 @@
  */
 int main(int argc, char *argv[])
 {
-int (*ptr_func)(int, int);
+	int i = 0;
 
-int i = 0;
 	for (; i < argc; i++)
 		printf("%s \n", argv[i]);
 
@@ -23,13 +22,6 @@ int i = 0;
 		exit(98);
 	}
 
-	ptr_func = get_op_func(argv[2]);
-	if (ptr_func == NULL)
-	{
-		printf("Error\n");
-		exit(99);
-	}
-
-	printf("%d\n", ptr_func(atoi(argv[1]), atoi(argv[3])));
+	printf("%d\n", (get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
