@@ -3,7 +3,7 @@
 # Project: 0x0E. C - Structures, typedef
 > What are structures, when, why and how to use them. How to use typedef
 
-
+Files in this folder:
 ### <img src="https://i.imgur.com/b3mhfGO.png" alt="Logo document" height="30"> dog.h
 
 Library that a new type **struct dog** 
