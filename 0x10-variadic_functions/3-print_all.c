@@ -16,40 +16,41 @@ void print_string(va_list);
  */
 void print_all(const char * const format, ...)
 {
-	int index_format = 0, has_printed_space = 0;
+	int index_format = 0, printed_sp = 0;
 	va_list arg_list;
-	int index_opt;
 
-	opt_funct options[] = {
-		{'c', print_char},
-		{'i', print_int},
-		{'f', print_float},
-		{'s', print_string}
-	};
+	if (format == NULL)
+		return;
 
 	va_start(arg_list, format);
 
 		while (format[index_format])
 		{
-
-			index_opt = 0;
-			while (index_opt < 4)
+			switch (printed_sp)
 			{
-				if (options[index_opt].format == format[index_format])
-				{
-					switch (has_printed_space)
-					{
-						case 1:
-							printf(", ");
-							break;
-						default:
-							has_printed_space=1;
-					}
+				case 1:
+					printf(", ");
+					break;
+				default:
+					printed_sp = 1;
+			}
 
-					options[index_opt].function(arg_list);
-
-				}
-				index_opt++;
+			switch (format[index_format])
+			{
+				case 'c':
+					print_char(arg_list);
+					break;
+				case 'i':
+					print_int(arg_list);
+					break;
+				case 'f':
+					print_float(arg_list);
+					break;
+				case 's':
+					print_string(arg_list);
+					break;
+				default:
+					printed_sp = 0;
 			}
 			index_format++;
 		}
@@ -107,6 +108,7 @@ void print_string(va_list arg_list)
 	char *ptr_string = va_arg(arg_list, char *);
 
 	if (!ptr_string)
-	ptr_string = "(nil)";
-		printf("%s", ptr_string);
+		ptr_string = "(nil)";
+
+	printf("%s", ptr_string);
 }
