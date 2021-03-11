@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 			printf(" ");
 
 		if (ptr[i] < 0)
-			printf("%x",   256 - (256*256*256*256 - ptr[i]) );
+			printf("%x",   256  + ptr[i] );
 		else
 			printf("%x",  ptr[i] );
 	}
