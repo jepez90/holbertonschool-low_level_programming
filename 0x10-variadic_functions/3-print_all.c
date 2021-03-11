@@ -16,7 +16,7 @@ void print_string(va_list);
  */
 void print_all(const char * const format, ...)
 {
-	int index_format = 0, is_printed_space = 0;
+	int index_format = 0;
 	va_list arg_list;
 	int index_opt;
 
@@ -37,11 +37,10 @@ void print_all(const char * const format, ...)
 			{
 				if (options[index_opt].format == format[index_format])
 				{
-					if (is_printed_space)
-						printf(", ");
-					is_printed_space++;
 
 					options[index_opt].function(arg_list);
+
+					printf(", ");
 				}
 				index_opt++;
 			}
