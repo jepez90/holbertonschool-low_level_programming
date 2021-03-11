@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_strings - Function that prints strings, followed by a new line.
+ * print_strings - Function that prints strings, followed by a new line.
  *
  * @separator: char to be printen between the strings in va_list
  * @n: number of elements in va_list
