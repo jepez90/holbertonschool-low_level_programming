@@ -5,8 +5,7 @@
 void print_char (va_list);
 void print_int (va_list);
 void print_float (va_list);
-void print_string (va_list);
-void (*get_function(char))(va_list);
+void print_string(va_list);
 
 /**
  * print_all - Function that prints anything.
@@ -19,19 +18,32 @@ void print_all(const char * const format, ...)
 {
 	int index_format = 0, is_printed_space = 0;
 	va_list arg_list;
+	int index_opt;
+
+	opt_funct options[] = {
+		{'c', print_char},
+		{'i', print_int},
+		{'f', print_float},
+		{'s', print_string}
+	};
 
 	va_start(arg_list, format);
 
 		while (format[index_format])
 		{
 
-			if (get_function(format[index_format]))
+			index_opt = 0;
+			while (index_opt < 4)
 			{
-				if (is_printed_space)
-					printf(", ");
+				if (options[index_opt].format == format[index_format])
+				{
+					if (is_printed_space)
+						printf(", ");
+					is_printed_space++;
 
-				is_printed_space++;
-				(get_function(format[index_format]))(arg_list);
+					options[index_opt].function(arg_list);
+				}
+				index_opt++;
 			}
 			index_format++;
 		}
@@ -40,48 +52,55 @@ void print_all(const char * const format, ...)
 	printf("\n");
 
 }
-void (*get_function(char format))(va_list)
-{
-	int i = 0;
-	opt_funct options[] = {
-		{'c', print_char},
-		{'i', print_int},
-		{'f', print_float},
-		{'s', print_string}
-	};
 
-	while (i < 4)
-	{
-		if (options[i].format == format)
-			return (options[i].function);
-		i++;
-	}
-
-	return NULL;
-
-}
+/**
+ * print_char - prints char
+ *
+ * @arg_list: list of parameters
+ *
+ * Return: nothing.
+ */
 void print_char (va_list arg_list)
 {
 	printf("%c", va_arg(arg_list, int));
 }
 
-
+/**
+ * print_int - prints an int
+ *
+ * @arg_list: list of parameters
+ *
+ * Return: nothing.
+ */
 void print_int (va_list arg_list)
 {
 	printf("%d", va_arg(arg_list, int));
 }
 
+/**
+ * print_float - prints an float
+ *
+ * @arg_list: list of parameters
+ *
+ * Return: nothing.
+ */
 void print_float (va_list arg_list)
 {
 	printf("%f", va_arg(arg_list, double));
 }
 
-void print_string (va_list arg_list)
+/**
+ * print_string - prints an string
+ *
+ * @arg_list: list of parameters
+ *
+ * Return: nothing.
+ */
+void print_string(va_list arg_list)
 {
 	char *ptr_string = va_arg(arg_list, char *);
+
 	if (!ptr_string)
 	ptr_string = "(nil)";
 		printf("%s", ptr_string);
-
 }
-
