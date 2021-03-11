@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int (*fmain)(int, char **) = &main;
 	int i;
-	char *ptr=(char *)fmain;
+	char *ptr = (char *)fmain;
 
 	if (argc != 2)
 	{
@@ -33,9 +33,9 @@ int main(int argc, char *argv[])
 			printf(" ");
 
 		if (ptr[i] < 0)
-			printf("%x",   256  + ptr[i] );
+			printf("%x",   256  + ptr[i]);
 		else
-			printf("%x",  ptr[i] );
+			printf("%x",  ptr[i]);
 	}
 
 	printf("\n");
