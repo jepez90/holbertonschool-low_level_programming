@@ -2,7 +2,7 @@
 
 # Project: 0x10. C - Variadic functions
 
-> Exercises about what are variadic function, How to use va_start, va_arg and va_end macros and why and how to use the const type qualifier
+> Exercises about what are variadic function, How to use va_start, va_arg and va_end macros and why and how to use the const type qualifier 
 
 Files in this folder:
 
