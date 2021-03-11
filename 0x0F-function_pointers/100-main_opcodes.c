@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
 	int (*fmain)(int, char **) = &main;
 	int i;
 	char *ptr = (char *)fmain;
+	int orden;
 
 	if (argc != 2)
 	{
@@ -29,15 +30,18 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < atoi(argv[1]); i++)
 	{
+		orden = ptr[i];
 		if (i != 0)
 			printf(" ");
 
-		if (ptr[i] < 0)
-			printf("%x",   256  + ptr[i]);
-		else
-			printf("%x",  ptr[i]);
+		if (orden < 0)
+			orden += 256;
+
+-		if (orden < 16)
+			printf("0");
+
+		printf("%x", orden);
 	}
 
 	printf("\n");
-
 }
