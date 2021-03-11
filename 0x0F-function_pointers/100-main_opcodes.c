@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 		if (orden < 0)
 			orden += 256;
 
--		if (orden < 16)
+		if (orden < 16)
 			printf("0");
 
 		printf("%x", orden);
