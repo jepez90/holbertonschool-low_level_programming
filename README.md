@@ -51,3 +51,15 @@ Exercises about what are macros, how to use them and how to include guard your h
 
 ### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo C" height="30"> 0x0E. C - Structures, typedef
 What are structures, when, why and how to use them. How to use typedef
+
+### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo C" height="30"> 0x0F. C - Function pointers
+
+Excercises about what are function pointers and how to use them, what does a function pointer exactly hold and where does a function pointer point to in the virtual memory
+
+### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo C" height="30"> 0x10. C - Variadic functions
+
+Exercises about what are variadic function, How to use va_start, va_arg and va_end macros and why and how to use the const type qualifier
+
+### <img src="https://i.imgur.com/q4mVetF.png" alt="Logo C" height="30"> 0x12. C - Singly linked lists
+
+Exercises about when and why using linked lists vs arrays and how to build and use linked lists.
