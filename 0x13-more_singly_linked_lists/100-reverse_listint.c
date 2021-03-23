@@ -14,6 +14,14 @@ listint_t *reverse_listint(listint_t **head)
 }
 
 
+/**
+ * _reverse_listint - reverses a listint_t list.
+ *
+ * @head: pointer to head of list.
+ * @prev_address: address of the prev node of the initial list
+ *
+ * Return: pointer to the first node of the reversed list.
+ */
 listint_t *_reverse_listint(listint_t **head, listint_t *prev_address)
 {
 	listint_t *new_head = NULL;
