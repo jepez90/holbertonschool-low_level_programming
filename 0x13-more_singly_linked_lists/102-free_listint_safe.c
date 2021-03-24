@@ -46,6 +46,7 @@ size_t _free_listint_safe(listint_t **head, listint_t *current_node, int deep)
 	{
 		deep = _free_listint_safe(head, current_node->next, deep + 1);
 		free(current_node);
+		current_node = NULL;
 	}
 
 	return (deep);
