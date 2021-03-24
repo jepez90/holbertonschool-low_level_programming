@@ -1,5 +1,7 @@
 #include "lists.h"
 
+int check_bucle1(const listint_t *head, listint_t *node, int deep);
+
 /**
  * print_listint_safe - prints a listint_t list.
  *
@@ -9,7 +11,6 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	list_ptrs *list = NULL;
 	listint_t *current_node = NULL;
 	int counter = 0;
 
@@ -22,7 +23,7 @@ size_t print_listint_safe(const listint_t *head)
 		else
 			current_node = (listint_t *)head;
 
-		if (!check_bucle(current_node, &list))
+		if (!check_bucle1(head, current_node, counter))
 		{
 			printf("[%p] %d\n", (void *)current_node, current_node->n);
 			counter++;
@@ -30,7 +31,6 @@ size_t print_listint_safe(const listint_t *head)
 		else
 		{
 			printf("-> [%p] %d\n", (void *)current_node, current_node->n);
-			free_list_ptrs(list);
 			break;
 		}
 	} while (current_node->next);
@@ -39,51 +39,21 @@ size_t print_listint_safe(const listint_t *head)
 }
 
 /**
- * check_bucle - hold a list with the addres used and check if node is in it.
+ * check_bucle1 - hold a list with the addres used and check if node is in it.
  *
- * @node: node to check.
- * @list: pointer to head of list of used nodes.
+ * @head: pointer to head of list.
+ * @node: node to be cheked.
+ * @deep: number of elements to check.
  *
  * Return: 1 if the node is in the list
  */
-int check_bucle(listint_t *node, list_ptrs **list)
+int check_bucle1(const listint_t *head, listint_t *node, int deep)
 {
-	list_ptrs *new_node;
+	if (!head || deep == 0)
+		return (0);
 
-	if (*list)
-	{
-		if ((*list)->pointer_used == node)
-			return (1);
+	if (head == node)
+		return (1);
 
-		return (check_bucle(node, &((*list)->next)));
-	}
-
-	new_node = malloc(sizeof(list_ptrs));
-	if (new_node == NULL)
-		exit(98);
-
-	new_node->pointer_used = node;
-	new_node->next = NULL;
-
-	/* add new node to end of list*/
-	*list = new_node;
-	return (0);
-}
-
-
-/**
- * free_list_ptrs - deallocate the memory of a list
- *
- * @head: pointer to head of list.
- *
- * Return: nothing
- */
-void free_list_ptrs(list_ptrs *head)
-{
-	if (!head)
-		return;
-
-	free_list_ptrs(head->next);
-
-	free(head);
+	return (check_bucle1(head->next, node, deep - 1));
 }
