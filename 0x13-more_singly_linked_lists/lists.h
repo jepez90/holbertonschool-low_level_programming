@@ -45,10 +45,25 @@ listint_t *reverse_listint(listint_t **head);
 
 listint_t *_reverse_listint(listint_t **head, listint_t *prev_address);
 
+/**
+ * list_pointers_used - pointers used in list
+ * @pointer_used: pointer to listint_s used
+ * @next: points to the next node
+ */
+typedef struct list_pointers_used
+{
+	listint_t *pointer_used;
+	struct list_pointers_used *next;
+} list_ptrs;
+
 size_t print_listint_safe(const listint_t *head);
 
 size_t free_listint_safe(listint_t **h);
 
 listint_t *find_listint_loop(listint_t *head);
+
+int check_bucle(listint_t *node, list_ptrs **list);
+
+void free_list_ptrs(list_ptrs *head);
 
 #endif /* LISTS_H */
