@@ -21,11 +21,10 @@ size_t free_listint_safe(listint_t **h)
 		return (0);
 
 	count = _free_listint_safe(h, (*h)->next, 0);
-
 	free(*h);
 	*h = NULL;
 
-	return (count);
+	return (count * sizeof(listint_t));
 }
 
 /**
