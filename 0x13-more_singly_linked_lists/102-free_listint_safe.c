@@ -43,10 +43,11 @@ size_t _free_listint_safe(listint_t **head, listint_t *current_node, int deep)
 		return (deep);
 
 	if (!check_bucle2((const listint_t *)*head, current_node, deep))
+	{
 		deep = _free_listint_safe(head, current_node->next, deep + 1);
+		free(current_node);
+	}
 
-	free(*head);
-	*head = NULL;
 	return (deep);
 }
 
