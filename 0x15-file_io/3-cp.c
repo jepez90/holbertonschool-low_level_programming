@@ -46,12 +46,16 @@ int main(int argc, char **argv)
 	}
 
 	free(buffer);
-	if (close(file_to))
+	if (close(file_to) == -1)
+	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to);
-	if (close(file_from))
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
-	if (close(file_to) || close(file_from))
 		exit(100);
+	}
+	if (close(file_from) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
+		exit(100);
+	}
 
 	return (0);
 }
