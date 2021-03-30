@@ -71,7 +71,7 @@ int main(int argc, char **argv)
 
 	free(buffer);
 
-	if (!close(file_to))
+	if (close(file_to))
 	{
 		dec_converter_uns((unsigned long) file_to, number, 10);
 		exit_on_error("Error: Can't close fd ", number, "\n", 100);
