@@ -7,15 +7,18 @@ void exit_on_error(char *s1, char *s2, char *s3, int cod_error);
 int string_len(char *string);
 
 /**
- * main - check the code for Holberton School students.
- *
+  * main - enter point.
+  *
+  * @argc: number of arguments passed in call to program
+  * @argv: array of arguments
+  *
  * Return: Always 0.
  */
 int main(int argc, char **argv)
 {
 	int file_from;
 	int file_to;
-	char *number="1";
+	char *number = "1";
 	ssize_t bytes_readed, bytes_writen;
 	char *buffer = malloc(sizeof(char) * 1024);
 
@@ -63,7 +66,7 @@ int main(int argc, char **argv)
 		}
 	}
 
-	free (buffer);
+	free(buffer);
 
 	if (close(file_to))
 	{
@@ -82,7 +85,7 @@ int main(int argc, char **argv)
 
 
 /**
- * len_string - returns the length of a string.
+ * string_len - returns the length of a string.
  *
  * @string: pointer to string.
  * Return: length of string.
