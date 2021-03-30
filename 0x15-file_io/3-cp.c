@@ -5,6 +5,8 @@
 
 void exit_on_error(char *s1, char *s2, char *s3, int cod_error);
 int string_len(char *string);
+void string_reverse(char *string);
+void dec_converter_uns(unsigned long dec, char *str_converted, int base);
 
 /**
   * main - enter point.
@@ -18,7 +20,7 @@ int main(int argc, char **argv)
 {
 	int file_from;
 	int file_to;
-	char *number = "1";
+	char number[] = "100";
 	ssize_t bytes_readed, bytes_writen;
 	char *buffer = malloc(sizeof(char) * 1024);
 
@@ -46,6 +48,7 @@ int main(int argc, char **argv)
 	{
 		/*leer archivo de origen y guardar en buffer*/
 		bytes_readed = read(file_from, buffer, 1024);
+
 		if (bytes_readed == -1)
 		{
 			exit_on_error("Error: Can't read from file ", argv[1], "\n", 98);
@@ -68,14 +71,14 @@ int main(int argc, char **argv)
 
 	free(buffer);
 
-	if (close(file_to))
+	if (!close(file_to))
 	{
-		number[0] = file_to + '0';
+		dec_converter_uns((unsigned long) file_to, number, 10);
 		exit_on_error("Error: Can't close fd ", number, "\n", 100);
 	}
 	if (close(file_from))
 	{
-		number[0] = file_from + '0';
+		dec_converter_uns((unsigned long) file_from, number, 10);
 		exit_on_error("Error: Can't close fd ", number, "\n", 100);
 	}
 
@@ -119,4 +122,51 @@ void exit_on_error(char *s1, char *s2, char *s3, int cod_error)
 	write(STDERR_FILENO, s2, string_len(s2));
 	write(STDERR_FILENO, s3, string_len(s3));
 	exit(cod_error);
+}
+
+/**
+ * dec_converter_uns - changes to string an unsigned number.
+ * @str_converted: secondary buffer to add numbers.
+ * @dec: number to convert to string.
+ * @base: base to convert number.
+ *
+ * Return: None.
+ */
+void dec_converter_uns(unsigned long dec, char *str_converted, int base)
+{
+	int index = 0;
+	unsigned long cociente = dec;
+	char letters[] = {"0123456789abcdef"};
+
+	if (cociente == 0)
+		str_converted[index++] = '0';
+
+	while (cociente)
+	{
+		str_converted[index++] = letters[cociente % base];
+		cociente /= base;
+	}
+
+	str_converted[index] = '\0';
+	string_reverse(str_converted);
+}
+
+/**
+ * string_reverse - reverses a string.
+ *
+ * @string: pointer to string.
+ * Return: void.
+ */
+void string_reverse(char *string)
+{
+
+	int i, length = string_len(string);
+	char hold;
+
+	for (i = 0; i < --length; i++)
+	{
+		hold = string[i];
+		string[i] = string[length];
+		string[length] = hold;
+	}
 }
