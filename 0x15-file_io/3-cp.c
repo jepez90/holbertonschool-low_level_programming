@@ -15,12 +15,13 @@ int main(int argc, char **argv)
 {
 	int file_from;
 	int file_to;
+	char *number="1";
 	ssize_t bytes_readed, bytes_writen;
 	char *buffer = malloc(sizeof(char) * 1024);
 
 	if (argc != 3)
 	{
-		exit_on_error("Usage: cp file_from file_to\n", "", "" , 97);
+		exit_on_error("Usage: cp file_from file_to\n", "", "", 97);
 	}
 
 	/*abrir archivo de origen*/
@@ -32,13 +33,13 @@ int main(int argc, char **argv)
 
 	/*abrir archivo de destino*/
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC,
-		S_IRUSR | S_IWUSR | S_IXUSR | S_IRGRP);
+		S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 	if (file_to == -1)
 	{
-		exit_on_error("Error: Can't write to " , argv[2], "\n", 99);
+		exit_on_error("Error: Can't write to ", argv[2], "\n", 99);
 	}
 
-	while(1)
+	while (1)
 	{
 		/*leer archivo de origen y guardar en buffer*/
 		bytes_readed = read(file_from, buffer, 1024);
@@ -53,7 +54,7 @@ int main(int argc, char **argv)
 
 			if (bytes_writen == -1)
 			{
-				exit_on_error("Error: Can't write to " , argv[2], "\n", 99);
+				exit_on_error("Error: Can't write to ", argv[2], "\n", 99);
 			}
 			if (bytes_readed < 1024)
 			{
@@ -66,11 +67,13 @@ int main(int argc, char **argv)
 
 	if (close(file_to))
 	{
-		exit_on_error("Error: Can't close fd " , argv[2], "\n", 100);
+		number[0] = file_to + '0';
+		exit_on_error("Error: Can't close fd ", number, "\n", 100);
 	}
 	if (close(file_from))
 	{
-		exit_on_error("Error: Can't close fd " , argv[1], "\n", 100);
+		number[0] = file_from + '0';
+		exit_on_error("Error: Can't close fd ", number, "\n", 100);
 	}
 
 	return (0);
@@ -112,5 +115,5 @@ void exit_on_error(char *s1, char *s2, char *s3, int cod_error)
 	write(STDERR_FILENO, s1, string_len(s1));
 	write(STDERR_FILENO, s2, string_len(s2));
 	write(STDERR_FILENO, s3, string_len(s3));
-	exit (cod_error);
+	exit(cod_error);
 }
