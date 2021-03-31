@@ -24,18 +24,17 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (-1);
 	}
 
-	if (!text_content)
-	{
-		text_content = "";
-	}
-
 	opened_file = open(filename, O_WRONLY | O_APPEND);
 	if (opened_file == -1)
 	{
 		return (-1);
 	}
 
-	bytes_writen = write(opened_file, text_content, len_string(text_content));
+	if (text_content)
+	{
+		bytes_writen = write(opened_file, text_content,
+			len_string(text_content));
+	}
 
 	close(opened_file);
 	if (bytes_writen == -1)
