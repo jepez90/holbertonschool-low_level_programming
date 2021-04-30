@@ -24,18 +24,16 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 
-	if (!text_content)
-	{
-		text_content = "";
-	}
-
 	new_file = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
 	if (new_file == -1)
 	{
 		return (-1);
 	}
 
-	bytes_writen = write(new_file, text_content, len_string(text_content));
+	if (text_content)
+	{
+		bytes_writen = write(new_file, text_content, len_string(text_content));
+	}
 
 	close(new_file);
 	if (bytes_writen == -1)
