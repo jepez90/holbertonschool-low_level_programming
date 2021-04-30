@@ -25,7 +25,7 @@ Function that prints all the elements of a ***dlistint_t*** list.
 <br />
 Function that returns the number of elements in a linked ***dlistint_t*** list.
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> **2-add_dnodeint.c** <br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> **2-add_dnodeint.c**<br />
 Function that adds a new node at the beginning of a ***dlistint_t*** list.
 
 
