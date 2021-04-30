@@ -2,7 +2,7 @@
 
 ***holbertonschool-low_level_programming***
 <hr />
- <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="120">
+ <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="120" style="max-width:80%;">
  <hr />
 <a href="https://twitter.com/Jepez90"><img src="https://img.shields.io/twitter/follow/jepez90?label=Follow%20me&style=social" alt="Logo Twitter">&nbsp;</a>
 <a href="https://www.linkedin.com/in/jerson-p%C3%A9rez-010059a4/"><img src="https://img.shields.io/badge/LinkedIn-Follow-blue" alt="Logo LinkedIn">&nbsp;</a>
@@ -17,10 +17,12 @@ How to use doubly linked lists
 
 ## Files in this Folder:
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> **0-print_dlistint.c** <br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> **0-print_dlistint.c**
+<br />
 Function that prints all the elements of a ***dlistint_t*** list.
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> **1-dlistint_len.c** <br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> **1-dlistint_len.c**
+<br />
 Function that returns the number of elements in a linked ***dlistint_t*** list.
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> **2-add_dnodeint.c** <br />
