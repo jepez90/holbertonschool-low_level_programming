@@ -4,9 +4,12 @@
 <hr />
  <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="120" style="max-width:80%;">
  <hr />
-<a href="https://twitter.com/Jepez90"><img src="https://img.shields.io/twitter/follow/jepez90?label=Follow%20me&style=social" alt="Logo Twitter">&nbsp;</a>
-<a href="https://www.linkedin.com/in/jerson-p%C3%A9rez-010059a4/"><img src="https://img.shields.io/badge/LinkedIn-Follow-blue" alt="Logo LinkedIn">&nbsp;</a>
-<a href="https://twitter.com/HolbertonCOL"><img src="https://img.shields.io/badge/Holberton_School-red" alt="Logo Holberton"></a>
+<a href="https://twitter.com/Jepez90"><img src="https://img.shields.io/twitter/url?label=%40Jepez90&style=social&url=https%3A%2F%2Ftwitter.com%2FJepez90" alt="Logo Twitter">&nbsp;</a>
+<a href="https://www.linkedin.com/in/jerson-p%C3%A9rez-010059a4/"><img src="https://img.shields.io/badge/jepez90-%230077B5.svg?&logo=linkedin&logoColor=white" alt="Logo LinkedIn">&nbsp;</a>
+<img src="https://img.shields.io/badge/jepez90-white?style=flat&logo=gmail" alt="Logo Gmail">&nbsp;
+<a href="https://twitter.com/HolbertonCOL"><img src="https://img.shields.io/badge/Holberton_School-red" alt="Logo Holberton">&nbsp;</a>
+
+<a href="https://github.com/jepez90"><img src="https://visitor-badge.glitch.me/badge?page_id=jepez90.lowlevel.0x17&" alt="badget visitors"></a>
 </div>
 
 
@@ -57,7 +60,7 @@ Function that deletes the node at index ***index*** of a ***dlistint_t
 
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **100-password**<br />
-Find the password for <a href="https://github.com/holbertonschool/0x17.c" title="crackme4" target="_blank">***crackme4***</a>.
+Find the password for <a href="https://github.com/holbertonschool/0x17.c" title="crackme4" target="_blank" > ***crackme4*** </a>.
 
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **102-result**<br />
@@ -65,4 +68,6 @@ A palindromic number reads the same both ways. The largest palindrome�
 
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> **103-keygen.c**<br />
-Write a keygen for <a href="https://github.com/holbertonschool/0x17.c" title="crackme5" target="_blank">***crackme5***</a>.
+Write a keygen for <a href="https://github.com/holbertonschool/0x17.c" title="crackme5" target="_blank" > ***crackme5*** </a>
+
+
