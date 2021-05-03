@@ -49,9 +49,7 @@ Function that returns the nth node of a ***dlistint_t*** linked list.
 Function that returns the sum of all the data (n) of a ***dlistint_t*** linked list.
 
 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> **7-insert_dnodeint.c** 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> **2-add_dnodeint.c** 
-* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> **3-add_dnodeint_end.c**<br />
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> **7-insert_dnodeint.c**<br />
 Function that inserts a new node at a given position.
 
 
@@ -60,7 +58,7 @@ Function that deletes the node at index ***index*** of a ***dlistint_t
 
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **100-password**<br />
-Find the password for <a href="https://github.com/holbertonschool/0x17.c" title="crackme4" target="_blank" > ***crackme4*** </a>.
+Find the password for  <a href="https://github.com/holbertonschool/0x17.c" title="crackme4" target="_blank"> ***crackme4*** </a>.
 
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_code_file.svg" alt="Logo Code" height="16"> **102-result**<br />
@@ -68,6 +66,6 @@ A palindromic number reads the same both ways. The largest palindrome�
 
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> **103-keygen.c**<br />
-Write a keygen for <a href="https://github.com/holbertonschool/0x17.c" title="crackme5" target="_blank" > ***crackme5*** </a>
+Write a keygen for <a href="https://github.com/holbertonschool/0x17.c" title="crackme5" target="_blank"> ***crackme5*** </a>
 
 
