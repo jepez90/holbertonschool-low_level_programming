@@ -147,6 +147,12 @@ How to create, open, close, read and write files in C.
 
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **0x17. C - Doubly linked lists**<br />
 > <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> Exercises about:
-Excercises about: What is a doubly linked list and How to use doubly linked lists.
+What is a doubly linked list and How to use doubly linked lists.
+
+<br />
+
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **0x18. C - Dynamic libraries**<br />
+> <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> Exercises about:
+What is a dynamic library, how does it work, how to create one, and how to use it, what is the environment variable ***$LD_LIBRARY_PATH*** and how to use it, what are the differences between static and shared libraries.
 
 <br />
