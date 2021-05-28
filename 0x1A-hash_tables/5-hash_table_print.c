@@ -10,10 +10,9 @@ void hash_table_print(const hash_table_t *ht)
 	unsigned int index;
 	char *delimiter = "";
 	hash_node_t *current_node;
-
-	printf("{");
-	if (ht != NULL && ht->array != NULL)
+	if (ht != NULL)
 	{
+		printf("{");
 		for (index = 0; index < ht->size; index++)
 		{
 			current_node = ht->array[index];
@@ -24,6 +23,6 @@ void hash_table_print(const hash_table_t *ht)
 				delimiter = (*delimiter == '\0') ? ", " : delimiter;
 			}
 		}
+		printf("}\n");
 	}
-	printf("}\n");
 }
