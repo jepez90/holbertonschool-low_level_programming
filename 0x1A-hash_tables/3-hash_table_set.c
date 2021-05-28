@@ -12,7 +12,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *new_node = NULL, *current_node;
 	int index;
 
-	if (ht == NULL || key == NULL || key[0] == '\0')
+	if (ht == NULL || key == NULL || key[0] == '\0' || value == NULL)
 		return (0);
 
 	/* search for for key in the list at index */
@@ -23,26 +23,27 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		if (strcmp(current_node->key, key) == 0)
 		{
 			/* if the key already exist, update its value */
-			if (current_node->value != NULL)
-				free(current_node->value);
-
+			free(current_node->value);
 			current_node->value = strdup(value);
+
 			return (1);
 		}
 
 		current_node = current_node->next;
 	}
 
+	/* create the new node */
 	new_node = malloc(sizeof(hash_node_t));
 	if (new_node == NULL)
 		return (0);
 
 	new_node->key = strdup(key);
 	new_node->value = strdup(value);
-	if (new_node == NULL)
+	if (new_node->value == NULL || new_node->key == NULL)
 		return (0);
 
+	/* add the new node at begin of the list in index position */
 	new_node->next = ht->array[index];
 	ht->array[index] = new_node;
-	return (0);
+	return (1);
 }
