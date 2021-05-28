@@ -10,6 +10,7 @@ void hash_table_print(const hash_table_t *ht)
 	unsigned int index;
 	char *delimiter = "";
 	hash_node_t *current_node;
+
 	if (ht != NULL)
 	{
 		printf("{");
@@ -18,7 +19,7 @@ void hash_table_print(const hash_table_t *ht)
 			current_node = ht->array[index];
 			while (current_node != NULL)
 			{
-				printf("%s%s: %s", delimiter, current_node->key, current_node->value);
+				printf("%s'%s': '%s'", delimiter, current_node->key, current_node->value);
 				current_node = current_node->next;
 				delimiter = (*delimiter == '\0') ? ", " : delimiter;
 			}
