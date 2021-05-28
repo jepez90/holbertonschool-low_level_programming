@@ -156,3 +156,9 @@ What is a doubly linked list and How to use doubly linked lists.
 What is a dynamic library, how does it work, how to create one, and how to use it, what is the environment variable ***$LD_LIBRARY_PATH*** and how to use it, what are the differences between static and shared libraries.
 
 <br />
+
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **0x1A. C - Hash tables**<br />
+> <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> Exercises about:
+What is a ***HashTable*** Data Structure, how to use them and how to simulate it in c
+
+<br />
