@@ -20,6 +20,9 @@ What is a HashTable Data Structure, how to use them and how to simulate it in c
 
 ## Files in this Folder:
 
+* <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logo_folder.svg" alt="Logo Folder" height="15"> **tests**<br />
+Files for test all functions
+
 * <img src="https://raw.githubusercontent.com/jepez90/jepez90.github.io/master/img/Readme_media/logoC.svg" alt="Logo C" height="15"> **0-hash_table_create.c**<br />
 Function that creates a hash table.
 
