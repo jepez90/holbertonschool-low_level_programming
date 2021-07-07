@@ -1,4 +1,4 @@
- #!/usr/bin/python3
+#!/usr/bin/python3
 """this module defines an function to calculate a perimeter in a grid"""
 
 def island_perimeter(grid):
