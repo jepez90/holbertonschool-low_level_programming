@@ -22,7 +22,8 @@ int interpolation_search(int *array, size_t size, int value)
 		while (range_begin <= range_end)
 		{
 			/*y = mx + b*/
-			m = (double)(range_end - range_begin) / (array[range_end] - array[range_begin]);
+			m = (double)(range_end - range_begin) / (array[range_end] -
+													 array[range_begin]);
 			index = (m * (value - array[range_begin])) + range_begin;
 
 			if (index >= size)
@@ -33,7 +34,6 @@ int interpolation_search(int *array, size_t size, int value)
 
 			printf(FORMAT_CHECK, index, array[index]);
 
-			/*index = range_begin + (((double)(range_end - range_begin) / (array[range_end] - array[range_begin])) * (value - array[range_begin]));*/
 			if (array[index] == value)
 				return (index);
 			else if (array[index] < value)
