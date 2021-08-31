@@ -19,7 +19,7 @@ int exponential_search(int *array, size_t size, int value)
 	char *FORMAT_CHECK = "Value checked array[%ld] = [%d]\n";
 	char *FORMAT_BETWEEN = "Value found between indexes [%ld] and [%ld]\n";
 
-	if (array != NULL)
+	if (array != NULL && size != 0)
 	{
 		/* calc the size of each jump */
 		range_end = 1;

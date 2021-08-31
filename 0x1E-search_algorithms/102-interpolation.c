@@ -17,7 +17,7 @@ int interpolation_search(int *array, size_t size, int value)
 	double m;
 	char *FORMAT_CHECK = "Value checked array[%ld] = [%d]\n";
 
-	if (array != NULL)
+	if (array != NULL && size != 0)
 	{
 		while (range_begin <= range_end)
 		{
