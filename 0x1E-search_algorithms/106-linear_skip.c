@@ -1,37 +1,39 @@
 #include "search_algos.h"
 
 /**
- * jump_list - searches for a value in a sorted list of integers using the
- * jump search algorithm.
+ * linear_skip - searches for a value in a sorted skip list of integers.
  *
- * @list: is a pointer to the head of the list to search in.
- * @size: is the number of nodes in list.
+ * @list: pointer to the head of the skip list to search in.
  * @value: is the value to search for.
  *
  * Return: the first node where value is located or NULL if value is not
  * present in list or if list is NULL
  */
-listint_t *jump_list(listint_t *list, size_t size, int value)
+skiplist_t *linear_skip(skiplist_t *list, int value)
 {
-	size_t step, j;
 	char *FORMAT_CHECK = "Value checked at index [%ld] = [%d]\n";
 	char *FORMAT_BETWEEN = "Value found between indexes [%ld] and [%ld]\n";
-
-	listint_t *left = NULL, *right = NULL;
+	skiplist_t *left = NULL, *right = NULL;
 
 	if (list != NULL)
 	{
-		/* calc the size of each jump */
-		step = sqrt(size);
-
-		/* calc the first step number greather than value */
+		/* search for nodes around the target with express lane */
 		right = list;
-		while (right->next != NULL && right->n < value)
+		while (right->n < value)
 		{
 			left = right;
-			for (j = 0; right->next != NULL && j < step; j++)
+			if (right->express != NULL)
 			{
-				right = right->next;
+				right = right->express;
+			}
+			else
+			{
+				/*if the express lane is null, search the last node*/
+				while (right->next != NULL)
+				{
+					right = right->next;
+				}
+				break;
 			}
 			printf(FORMAT_CHECK, right->index, right->n);
 		}
@@ -43,9 +45,7 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 		{
 			printf(FORMAT_CHECK, left->index, left->n);
 			if (left->n == value)
-			{
 				return (left);
-			}
 
 			left = left->next;
 		}
