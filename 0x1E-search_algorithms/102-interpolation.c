@@ -19,6 +19,8 @@ int interpolation_search(int *array, size_t size, int value)
 
 	if (array != NULL && size != 0)
 	{
+		if (array[0] == value)
+			return (0);
 		while (range_begin <= range_end)
 		{
 			/*y = mx + b*/
